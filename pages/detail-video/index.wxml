@@ -1,0 +1,12 @@
+<!--pages/detail-video/index.wxml-->
+<view>
+  <video src=""></video>
+  <view>
+    <view>
+      
+    </view>
+    <view>
+      
+    </view>
+  </view>
+</view>

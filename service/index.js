@@ -7,12 +7,13 @@ class HYRequest{
         url:baseUrl+url,
         method:method,
         data:params,
-        success:function(res){
-          resolve(res)
+        success:function(res){ 
+          resolve(res.data)
         },
-        fail:function(err){
-          reject(err)
-        }
+        fail:reject
+        // fail:function(err){
+        //   reject(err)
+        // }
       })
     })
   }

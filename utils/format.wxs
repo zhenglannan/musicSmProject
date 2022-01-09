@@ -1,0 +1,30 @@
+function formatCount(count) {
+  var counter = parseInt(count)
+  if (count > 100000000) {
+    return (count / 10000000).toFixed(1) + "亿"
+  } else if (count > 10000) {
+    return (count / 10000).toFixed(1) + "万"
+  } else {
+    return counter + "" //希望它是个字符串？
+  }
+}
+
+function padLeftZero(time){
+  time=time.toString();//time+""
+  return ("00"+time).slice(time.length)
+}
+function formatDuration(duration){
+  duration=duration/1000
+
+  var minute=padLeftZero(Math.floor(duration/60))
+
+  var seconds=padLeftZero(Math.floor(duration)%60)
+
+  return minute+":"+seconds
+}
+//不支持es6语法。支持commonjs
+
+module.exports = {
+  formatCount: formatCount,
+  formatDuration:formatDuration
+}
