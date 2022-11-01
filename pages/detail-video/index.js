@@ -1,10 +1,18 @@
 // pages/detail-video/index.js
+import {
+  getMVDetail,
+  getMVURL,
+  getRelatedVideo,
+} from '../../service/api_video'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    mvURLInfo: "",
+    mvDetail: "",
+    relatedVideos: [],
 
   },
 
@@ -12,21 +20,37 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    const id=options.id;
-
-    // 1.请求播放地址
-
-    // 2.请求视频信息
-
-
-    // 3.请求相关视频
+    const id = options.id;
+    this.getPageData(id);
   },
 
- 
+  getPageData(id) {
+    // 1.请求播放地址
+    getMVURL(id).then(res => {
+      this.setData({
+        mvURLInfo: res.data
+      })
+    })
+    // 2.请求视频信息
+    getMVDetail(id).then(res => {
+      this.setData({
+        mvDetail: res.data
+      })
+    })
 
-  
+    // 3.请求相关视频
+    getRelatedVideo(id).then(res => {
+      this.setData({
+        relatedVideos: res.data
+      })
+    })
+  }
 
-  
 
-  
+
+
+
+
+
+
 })

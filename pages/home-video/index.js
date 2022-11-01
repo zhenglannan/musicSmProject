@@ -45,7 +45,7 @@ Page({
     }
   },
   // 封装事件处理方法
-  handleVideoItemClick(event){
+  handleVideoItemClick(event){ 
     const id=event.currentTarget.dataset.item.id;
     wx.navigateTo({
       url: '/pages/detail-video/index?id='+id,
