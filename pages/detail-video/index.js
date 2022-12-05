@@ -43,9 +43,12 @@ Page({
         relatedVideos: res.data
       })
     })
+
+  },
+
+  btnTap(){
+    console.log(1);
   }
-
-
 
 
 

@@ -1,6 +1,6 @@
 <!--pages/detail-video/index.wxml-->
 <video class="video" src="{{mvURLInfo.url}}" loop></video>
-
+<van-button type="primary" bind:click='btnTap'  >按钮</van-button>
 <block wx:for="{{100}}" wx:key="*this">
   <view>
     {{item}}

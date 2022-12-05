@@ -13,6 +13,14 @@
           "name": "detail-video",
           "pathName": "pages/detail-video/index",
           "query": "id=14480854",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "home-music",
+          "pathName": "pages/home-music/index",
+          "query": "",
+          "launchMode": "default",
           "scene": null
         }
       ]

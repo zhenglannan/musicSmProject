@@ -1,0 +1,24 @@
+{
+  "name": "musicsmproject",
+  "description": "1.小程序不用细分这么严格",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "@vant/weapp": "^1.10.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhenglannan/musicSmProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhenglannan/musicSmProject/issues"
+  },
+  "homepage": "https://github.com/zhenglannan/musicSmProject#readme"
+}

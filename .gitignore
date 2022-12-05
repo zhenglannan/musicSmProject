@@ -1,0 +1,13 @@
+
+node_modules
+miniprogram_npm
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode
